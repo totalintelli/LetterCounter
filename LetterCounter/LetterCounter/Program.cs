@@ -24,6 +24,18 @@ namespace LetterCounter
             // Get letterCount from inputString
             letterCount = inputString.Length;
 
+            Output(inputString, letterCount);
+
+            // End 
+            Console.ReadLine();
+        }
+
+        /// <summary>
+        /// 콘솔 창에 글자 수 세기의 결과를 출력한다.
+        /// </summary>
+        /// <param name="letterCount"></param>
+        private static void Output(string inputString, int letterCount)
+        {
             if (letterCount > 0)
             {
                 // Display inputString + " has " + letterCount + " characters."
@@ -33,9 +45,6 @@ namespace LetterCounter
             {
                 Console.WriteLine("Please write anything.");
             }
-
-            // End 
-            Console.ReadLine();
         }
     }
 }
