@@ -24,8 +24,15 @@ namespace LetterCounter
             // Get letterCount from inputString
             letterCount = inputString.Length;
 
-            // Display inputString + " has " + letterCount + " characters."
-            Console.WriteLine(inputString + " has " + letterCount + " characters.");
+            if (letterCount > 0)
+            {
+                // Display inputString + " has " + letterCount + " characters."
+                Console.WriteLine(inputString + " has " + letterCount + " characters.");
+            }
+            else
+            {
+                Console.WriteLine("Please write anything.");
+            }
 
             // End 
             Console.ReadLine();
